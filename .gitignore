@@ -34,3 +34,4 @@
 /config/*.key
 
 .DS_STORE
+.byebug_history
