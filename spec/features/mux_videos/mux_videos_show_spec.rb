@@ -7,4 +7,8 @@ describe "Visit show page of mux video", type: :feature do
   it "displays index page title" do
     expect(page).to have_content 'Watch Video'
   end
+
+  it "displays video UID" do
+    expect(page).to have_content 'PROVIDER-UID-1'
+  end
 end

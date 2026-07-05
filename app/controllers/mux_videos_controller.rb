@@ -4,5 +4,6 @@ class MuxVideosController < ApplicationController
   end
 
   def show
+    @mux_video = MuxVideo.find(params.require("id"))
   end
 end
