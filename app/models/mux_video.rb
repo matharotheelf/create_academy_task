@@ -1,0 +1,2 @@
+class MuxVideo < Video
+end
