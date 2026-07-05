@@ -1,5 +1,10 @@
-List of Videos
+<h1>List of Videos</h1>
 
+<ul>
 <% @mux_videos.each do |mux_video| %>
-  <%= mux_video.provider_id %>
+  <li>
+  <a href=<%= mux_video_path(mux_video) %>><%= mux_video.provider_id %></a>
+  </li>
 <% end %>
+</ul>
+
