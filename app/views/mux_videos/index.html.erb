@@ -1,3 +1,5 @@
 List of Videos
 
-<%= @mux_videos.first.provider_id %>
+<% @mux_videos.each do |mux_video| %>
+  <%= mux_video.provider_id %>
+<% end %>
