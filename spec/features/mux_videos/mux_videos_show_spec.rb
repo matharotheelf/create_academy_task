@@ -8,7 +8,8 @@ describe "Visit show page of mux video", type: :feature do
     expect(page).to have_content 'Watch Video'
   end
 
-  it "displays video UID" do
-    expect(page).to have_content 'PROVIDER-UID-1'
+  it "displays video element with correct uid" do
+    mux_player = page.find('mux-player', match: :first)
+    expect(mux_player['playback-id']).to eq('PROVIDER-UID-1')
   end
 end
