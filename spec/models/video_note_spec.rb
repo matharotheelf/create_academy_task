@@ -8,4 +8,8 @@ RSpec.describe VideoNote, type: :model do
   it "note content must be filled" do
     should validate_presence_of(:content)
   end
+
+  it "note video time must be filled" do
+    should validate_presence_of(:timestamp)
+  end
 end
