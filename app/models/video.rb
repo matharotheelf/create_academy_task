@@ -3,4 +3,5 @@ class Video < ApplicationRecord
   self.inheritance_column = "provider"
 
   validates :provider, presence: true
+  validates :provider_id, presence: true
 end
